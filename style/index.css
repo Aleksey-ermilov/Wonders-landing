@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+@import "variable.css";
+@import "style.css";
+@import "layout.css";
+
+@import "./sections/header.css";
+@import "./sections/tickets.css";
+@import "./sections/achievements.css";
+@import "./sections/gallery.css";
+@import "./sections/appas.css";
+@import "./sections/faqs.css";
+@import "./sections/contacts.css";
+@import "./sections/footer.css";

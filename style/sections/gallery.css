@@ -1,0 +1,107 @@
+#gallery {
+    padding: 130px 0;
+}
+
+#gallery>div {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+#gallery>div>div {
+    display: grid;
+    grid-template-columns: 528px 305px 416px;
+    grid-template-rows: 376px 88px 264px;
+    gap: 24px;
+}
+
+#gallery>div>div>img:last-child {
+    grid-row: 3 / span 1;
+    grid-column: 2 / span 2;
+}
+
+@media (max-width: 1312px) {
+    #gallery>div>div {
+        display: grid;
+        grid-template-columns: repeat(2, 340px);
+        grid-template-rows: 380px 360px 425px 225px;
+    }
+
+    #gallery>div>div>img:first-child {
+        width: 704px;
+        height: 380px;
+    }
+
+    #gallery>div>div>img:nth-child(2) {
+        width: 340px;
+        height: 425px;
+        grid-row: 3;
+        grid-column: 1;
+    }
+
+    #gallery>div>div>img:nth-child(3) {
+        width: 340px;
+        height: 425px;
+        grid-row: 3;
+        grid-column: 2;
+    }
+
+    #gallery>div>div>img:nth-child(4) {
+        width: 704px;
+        height: 362px;
+        grid-row: 2;
+        grid-column: 1 / span 2;
+    }
+
+    #gallery>div>div>img:last-child {
+        width: 704px;
+        height: 225px;
+        grid-row: 4;
+        grid-column: 1 / span 2;
+    }
+}
+
+@media (max-width: 704px) {
+    #gallery>div>div {
+        display: grid;
+        grid-template-columns: 320px;
+        grid-template-rows: 220px 209px 472px 637px 141px;
+    }
+
+    #gallery>div>div>img {
+        object-fit: cover;
+        border-radius: 10px;
+    }
+
+    #gallery>div>div>img:first-child {
+        width: 320px;
+        height: 220px;
+        grid-row: 1;
+    }
+
+    #gallery>div>div>img:nth-child(2) {
+        width: 320px;
+        height: 472px;
+        grid-row: 3;
+    }
+
+    #gallery>div>div>img:nth-child(3) {
+        width: 320px;
+        height: 637px;
+        grid-row: 4;
+        grid-column: 1;
+    }
+
+    #gallery>div>div>img:nth-child(4) {
+        width: 320px;
+        height: 209px;
+        grid-row: 2;
+        grid-column: 1;
+    }
+
+    #gallery>div>div>img:last-child {
+        width: 320px;
+        height: 141px;
+        grid-row: 5;
+    }
+}

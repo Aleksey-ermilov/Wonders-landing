@@ -1,0 +1,141 @@
+#tickets {
+    padding-top: 64px;
+    padding-bottom: 128px;
+}
+
+#tickets>div {
+    display: flex;
+    justify-content: space-between;
+    gap: 32px;
+}
+
+#tickets>div>div {
+    width: 640px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+#tickets form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+#tickets form>div:first-child {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px 24px;
+    border-radius: 16px;
+}
+
+#tickets form .counter_block {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+#tickets form .counter_block>div {
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+}
+
+#tickets form .counter_block>div span:first-child {
+    cursor: pointer;
+}
+
+#tickets form .counter_block>div span:last-child {
+    color: var(--primary-blue);
+    cursor: pointer;
+}
+
+#tickets form>div:nth-child(2) input,
+#tickets form>div:nth-child(3) input {
+    padding: 16px 24px;
+    border-radius: 16px;
+    border: none;
+    width: 304px;
+}
+
+#tickets form>div:nth-child(2) {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 500;
+}
+
+#tickets form>div:nth-child(2) label {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+#tickets form>div:nth-child(3) {
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+#tickets form>div:nth-child(3)>div {
+    display: flex;
+    gap: 32px;
+}
+
+#tickets form>button {
+    background-color: var(--primary-blue);
+    color: var(--text-color-white);
+    border: none;
+    padding: 16px 0;
+    border-radius: 16px;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+#tickets>div>img {
+    width: 640px;
+    height: 704px;
+    object-fit: contain;
+    transform: scaleX(-1);
+}
+
+@media (max-width: 1312px) {
+    #tickets>div {
+        justify-content: center;
+    }
+
+    #tickets>div>img {
+        display: none;
+    }
+}
+
+@media (max-width: 704px) {
+    h1 {
+        font-size: 32px;
+    }
+
+    #tickets>div>div>p {
+        font-size: 11px;
+    }
+
+    #tickets form>div:first-child label {
+        font-size: 14px;
+    }
+
+    #tickets form>div:nth-child(2) input,
+    #tickets form>div:nth-child(3) input {
+        width: 320px;
+    }
+
+    #tickets form>div:nth-child(2) {
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    #tickets form>div:nth-child(3)>div {
+        flex-direction: column;
+    }
+}
