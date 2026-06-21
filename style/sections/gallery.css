@@ -62,10 +62,15 @@
 }
 
 @media (max-width: 704px) {
+    #gallery {
+        padding: 64px 0;
+    }
+
     #gallery>div>div {
         display: grid;
         grid-template-columns: 320px;
         grid-template-rows: 220px 209px 472px 637px 141px;
+        gap: 12px;
     }
 
     #gallery>div>div>img {
